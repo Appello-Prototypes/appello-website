@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { CheckCircle, Clock, DollarSign, Shield, Users, TrendingUp, AlertTriangle, Calculator, FileText, Smartphone } from "lucide-react";
+import { CheckCircle, Clock, DollarSign, Shield, TrendingUp, AlertTriangle, Calculator, FileText, Smartphone } from "lucide-react";
 
 export default function TimeTrackingContractors() {
   return (

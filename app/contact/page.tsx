@@ -4,7 +4,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
-import { CheckCircle, Clock, DollarSign, Shield, Phone, Mail, MapPin, Calendar, Users, TrendingUp } from "lucide-react";
+import { CheckCircle, Clock, DollarSign, Shield, Phone, Mail, MapPin, Users } from "lucide-react";
 
 export default function Contact() {
   return (
