@@ -39,4 +39,19 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# SECURITY: Cursor configuration files containing API keys
+# CRITICAL: Never commit these files as they contain sensitive API keys
 .cursor/mcp.json
+.cursor/*.json
+
+# Additional security patterns
+# API keys and secrets
+*.key
+*.secret
+.secrets/
+secrets/
+
+# Local development configuration
+.vscode/settings.json
+.vscode/launch.json
