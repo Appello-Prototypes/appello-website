@@ -139,10 +139,32 @@
 
 ### ATLAS Research Guidelines
 **Critical Rules**:
-- ONE question per query to avoid timeouts
+- **ONE question per query to avoid timeouts** 
+- **Keep queries simple and focused**
 - Build understanding iteratively
 - Break compound questions into single concepts
 - Document insights after each query
+
+**What Fails (Complex Queries)**:
+- ❌ "What are the specific company characteristics, size ranges, and geographic locations of Appello's most successful customers? Please provide detailed insights about company size (number of employees, revenue ranges), trade specialties (electrical, HVAC, mechanical insulation), geographic concentration, and whether they are union or non-union shops."
+- ❌ Long, multi-part questions with multiple sub-questions
+- ❌ Queries requesting comprehensive analysis in one go
+
+**What Works (Simple Queries)**:
+- ✅ "What are the company characteristics of Appello's most successful customers?"
+- ✅ "What are the job titles and roles of Appello's buyers and decision makers?"
+- ✅ "What are the competitive alternatives to Appello and main complaints about competitors?"
+- ✅ "What are common sales objections and key decision factors for Appello?"
+
+**Successful ATLAS Query Pattern**:
+1. Start with a simple, focused question
+2. Get the response
+3. Log the findings immediately  
+4. Form the next simple question based on what you learned
+5. Build comprehensive understanding through multiple simple queries
+6. Synthesize all findings into a complete picture
+
+**Key Insight**: ATLAS provides rich, detailed responses even to simple queries. By asking focused questions, you get better quality data and avoid timeouts entirely.
 
 ### Development Workflow
 **Optimized Process**:
@@ -198,6 +220,7 @@
 ❌ Commit API keys or sensitive data  
 ❌ Skip local build testing before deployment  
 ❌ Use compound questions with ATLAS  
+❌ Ask multi-part or complex questions in ATLAS (they will timeout)
 ❌ Reference components without installing  
 ❌ Ignore Node.js version requirements  
 ❌ Push code without explicit approval  
