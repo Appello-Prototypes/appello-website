@@ -1,0 +1,314 @@
+<context>
+# Overview  
+Transform the Appello website into a comprehensive solution-focused lead generation platform by developing 10 targeted solution pages that address specific ICI subcontractor pain points. Building on the proven foundation of the existing pain point landing page success, this expansion will create specialized pages for each core Appello capability, driving qualified leads through problem-specific entry points.
+
+**Target Audience**: ICI (Industrial, Commercial, Institutional) subcontractors including mechanical, electrical, HVAC, plumbing, and specialty contractors with 10-200 employees who struggle with disconnected systems, manual processes, and profitability visibility.
+
+**Value Proposition**: Position Appello as the unified platform that eliminates system fragmentation, automates manual processes, and provides real-time profitability insights specifically designed for subcontractor workflows.
+
+**Strategic Approach**: Leverage the proven bottom-up methodology that made `/time-tracking-contractors` successful, creating 10 specialized solution pages that each target specific pain points with technical proof points, customer validation, and clear competitive advantages.
+
+**Business Impact**: Transform website from 3-page foundation into comprehensive solution showcase that captures leads across all major ICI subcontractor pain points, supporting sales team with qualified prospects who understand specific Appello capabilities.
+</context>
+
+<PRD>
+# Core Features  
+
+## Phase 1: Critical Solution Pages (Immediate Priority)
+**Based on customer pain point frequency and technical readiness**
+
+### 1. Time Tracking & Payroll Automation (`/solutions/time-tracking-payroll`)
+- **Problem Focus**: #1 customer complaint - manual payroll nightmares
+- **Technical Proof Points**: Geofencing (500m-2km), union compliance, CBA support
+- **Customer Validation**: "Payroll went from a nightmare to done by noon the next day"
+- **Competitive Edge**: vs. Generic solutions, vs. Procore complexity ($667/month)
+
+### 2. Eliminate Disconnected Systems (`/solutions/unified-platform`)
+- **Problem Focus**: System fragmentation across 18 functional categories
+- **Technical Proof Points**: Native integrations, modular selection, unified data
+- **Customer Validation**: "Strong interest from prospects to rip-and-replace existing systems"
+- **Competitive Edge**: Bridge capability via Trimble App XChange to Zapier
+
+### 3. Real-Time Job Costing (`/solutions/job-costing-profitability`)
+- **Problem Focus**: Field-office misalignment causing overbilling issues
+- **Technical Proof Points**: Real-time budget alerts, AI-assisted estimating, bi-directional sync
+- **Customer Validation**: Real-time visibility vs. month-end surprises
+- **Competitive Edge**: Construction-specific vs. adapted general business software
+
+### 4. Equipment & Asset Management (`/solutions/equipment-asset-tracking`)
+- **Problem Focus**: Equipment loss, theft, and maintenance compliance
+- **Technical Proof Points**: QR code tracking, geolocation monitoring, maintenance scheduling
+- **Customer Validation**: Equipment worth $50K+ across multiple job sites
+- **Competitive Edge**: Construction-specific workflows vs. generic asset management
+
+### 5. Safety & Compliance Automation (`/solutions/safety-compliance-management`)
+- **Problem Focus**: Paper-based safety documentation chaos
+- **Technical Proof Points**: Conditional logic forms, certification tracking, audit trails
+- **Customer Validation**: COR certification support and OSHA reporting
+- **Competitive Edge**: ICI-specific requirements vs. generic inspection platforms
+
+## Phase 2: Advanced Solution Pages (3-6 months)
+
+### 6. Advanced Workforce Scheduling (`/solutions/workforce-scheduling`)
+- **Problem Focus**: Manual text message and phone call coordination
+- **Technical Proof Points**: Certification cross-referencing, trade-specific scheduling, CBA compliance
+- **Mobile Integration**: Turn-by-turn directions, real-time updates, geofenced clock-in
+
+### 7. Financial Integration (`/solutions/financial-integration`)
+- **Problem Focus**: Manual data entry between field operations and accounting
+- **Technical Proof Points**: Bi-directional QuickBooks/Sage sync, Trimble App XChange certification
+- **Unique Position**: Bridge allowing Vista → Trimble → Zapier → anything else
+
+### 8. Sales & Estimation Intelligence (`/solutions/sales-estimation-management`)
+- **Problem Focus**: Disconnected estimating and project execution
+- **Technical Proof Points**: AI-assisted estimation, historical cost integration, deal flow tracking
+
+## Phase 3: Future Expansion Pages (6-12 months)
+
+### 9. Service & Dispatch Management (`/solutions/service-dispatch`)
+- **Market Gap**: ServiceTitan focuses residential; commercial service underserved
+- **Unique Position**: Only platform handling both ICI projects and commercial service
+
+### 10. Supply Chain Management (`/solutions/supply-chain-management`)
+- **Market Gap**: Limited commercial construction supply chain solutions
+- **Integration**: Material costs with project budgets, delivery coordination
+
+# User Experience  
+
+## Primary User Personas
+1. **Project Manager** (30-45): Drowning in coordination between systems, needs unified visibility
+2. **Contractor Owner** (40-60): Focused on profitability, wants real-time job costing and system ROI
+3. **Field Supervisor** (25-45): Manages crews and equipment, needs mobile-first tools
+4. **Office Administrator** (30-55): Handles payroll/compliance, frustrated with manual processes
+
+## Key User Flows
+1. **Problem-Specific Entry**: Google search → solution page → recognize pain point → demo request
+2. **Solution Comparison**: Homepage → explore solutions → multiple page visits → qualified demo request
+3. **Technical Validation**: Solution page → technical proof points → competitive comparison → contact sales
+
+## Page Structure Template
+**Consistent across all solution pages:**
+- **Hero Section**: Problem-focused headline with customer quote
+- **Pain Point Deep Dive**: Before/after scenarios with specific examples
+- **Core Solutions**: 3-4 technical capabilities with proof points
+- **Customer Validation**: Real quotes from ATLAS feedback
+- **Competitive Advantages**: vs. Manual systems, vs. Generic tools, vs. Procore
+- **Technical Differentiators**: Mobile-first, construction-specific, integration capabilities
+- **CTA Section**: Demo request with solution-specific messaging
+
+## Mobile-First Design Principles
+- **Field Worker Focus**: All solutions emphasize mobile usability
+- **Touch-Friendly**: Large buttons, easy navigation for construction environments
+- **Offline Capability**: Highlight offline functionality where applicable
+- **Visual Proof**: Screenshots of mobile interfaces and QR code scanning
+
+# Technical Architecture  
+
+## Current Foundation (Complete)
+- **Next.js 15**: App Router with TypeScript and Tailwind CSS
+- **Component Library**: shadcn/ui with Radix UI primitives
+- **Performance**: Static generation, optimized builds (105kB first load JS)
+- **SEO Ready**: Proper meta tags, structured data capability
+
+## Solution Page Technical Requirements
+
+### Page Generation System
+- **Template-Based**: Reusable solution page template with dynamic content
+- **SEO Optimization**: Unique meta descriptions, structured data for each solution
+- **Performance**: Static generation for all solution pages
+- **Analytics Ready**: Event tracking for solution-specific conversions
+
+### Content Management
+- **Markdown Support**: Easy content updates for solution descriptions
+- **Image Optimization**: Technical screenshots, diagrams, mobile interface examples
+- **Video Integration**: Demo videos embedded within solution pages
+- **Form Integration**: Solution-specific demo request forms with hidden fields
+
+### Integration Capabilities
+- **Analytics Tracking**: Google Analytics 4 with solution-specific goals
+- **A/B Testing**: Split testing for different solution page layouts
+- **Lead Qualification**: Hidden form fields to track solution interest
+- **CRM Integration**: Automatic lead routing based on solution interest
+
+## Development Infrastructure
+- **Component Reusability**: Solution page template components
+- **Content Validation**: TypeScript interfaces for solution page data
+- **Build Optimization**: Static generation for all 10 solution pages
+- **Deployment**: Vercel with preview deployments for content review
+
+# Development Roadmap  
+
+## Phase 1: Foundation Solution Pages (Weeks 1-8)
+**Priority**: Build 5 highest-impact solution pages with proven demand
+
+### Week 1-2: Solution Page Template Development
+- Create reusable solution page template component
+- Implement solution page routing structure (/solutions/[slug])
+- Build shared components (hero, pain points, technical proof, CTA)
+- Set up content management system for solution data
+
+### Week 3-4: Time Tracking & Unified Platform Pages
+- `/solutions/time-tracking-payroll` - Complete page with geofencing proof points
+- `/solutions/unified-platform` - Focus on system fragmentation pain point
+- Customer testimonials integration and mobile interface screenshots
+- A/B testing setup for headline and CTA variations
+
+### Week 5-6: Job Costing & Equipment Management Pages  
+- `/solutions/job-costing-profitability` - Real-time financial tracking focus
+- `/solutions/equipment-asset-tracking` - QR code and geolocation emphasis
+- Technical differentiation sections with competitive comparisons
+- Integration with existing contact form for solution-specific leads
+
+### Week 7-8: Safety Compliance Page & Optimization
+- `/solutions/safety-compliance-management` - Conditional logic forms focus
+- Performance optimization across all Phase 1 pages
+- Analytics implementation and conversion tracking
+- Internal linking strategy between solution pages
+
+## Phase 2: Advanced Solutions & Analytics (Weeks 9-16)
+
+### Week 9-10: Advanced Solution Pages
+- `/solutions/workforce-scheduling` - Certification cross-referencing
+- `/solutions/financial-integration` - Trimble partnership emphasis
+- Mobile-first design refinements based on Phase 1 analytics
+
+### Week 11-12: Estimation Intelligence & Content Enhancement
+- `/solutions/sales-estimation-management` - AI-assisted features
+- Content enhancement based on user behavior analytics
+- Video integration for technical proof points
+
+### Week 13-16: Analytics & Optimization
+- Comprehensive analytics dashboard for solution page performance
+- A/B testing implementation across all solution pages
+- Lead qualification scoring based on solution page engagement
+- SEO optimization and organic search targeting
+
+## Phase 3: Future Expansion & Integration (Weeks 17-24)
+
+### Week 17-20: Coming Soon Pages
+- `/solutions/service-dispatch` - Market gap positioning
+- `/solutions/supply-chain-management` - Future vision content
+- Email capture for early access to upcoming solutions
+
+### Week 21-24: Advanced Features & Integration
+- Interactive ROI calculators for each solution
+- Custom demo request flows per solution
+- Advanced lead scoring and CRM integration
+- Marketing automation setup for solution-specific nurture sequences
+
+# Logical Dependency Chain
+
+## Foundation Dependencies (Completed)
+1. ✅ Next.js technical infrastructure with App Router
+2. ✅ Component library and design system (shadcn/ui)
+3. ✅ Responsive design and mobile optimization
+4. ✅ Basic contact/demo page functionality
+
+## Phase 1 Dependencies (Critical Path)
+1. **Solution Page Template** → All subsequent solution pages
+2. **Content Management System** → Scalable content updates
+3. **Analytics Foundation** → Performance measurement capability
+4. **High-Impact Pages First** → Time tracking → Unified platform → Job costing → Equipment → Safety
+
+## Phase 2 Dependencies
+1. **Phase 1 Analytics Data** → Informed optimization decisions
+2. **Customer Feedback Integration** → Content refinement
+3. **A/B Testing Infrastructure** → Conversion optimization
+4. **Advanced Solution Pages** → Workforce → Financial → Estimation
+
+## Phase 3 Dependencies  
+1. **Market Validation Data** → Future solution prioritization
+2. **CRM Integration** → Advanced lead management
+3. **Technical Proof Points** → Coming soon page credibility
+4. **Complete Solution Story** → Service dispatch → Supply chain
+
+## Critical Success Factors
+- **Mobile-First Development**: All solutions must work perfectly on smartphones
+- **Performance Maintenance**: Each new page must maintain sub-2-second load times
+- **Analytics from Day 1**: Track conversion funnels for each solution immediately
+- **Customer Quote Integration**: Real testimonials for social proof on every page
+
+# Risks and Mitigations  
+
+## Technical Challenges
+
+### Risk: Performance Degradation with 10 New Pages
+**Mitigation**: 
+- Static generation for all solution pages
+- Image optimization and lazy loading
+- Component code splitting
+- Regular performance audits with Core Web Vitals monitoring
+
+### Risk: Content Management Complexity
+**Mitigation**:
+- Structured content system with TypeScript interfaces
+- Reusable template components
+- Version control for content changes
+- Staged deployment with preview environments
+
+## Content & Conversion Risks
+
+### Risk: Solution Page Cannibalization
+**Mitigation**:
+- Clear internal linking strategy between related solutions
+- Unique value propositions per page
+- Analytics tracking to identify user journey patterns
+- Cross-solution recommendations in CTAs
+
+### Risk: Message Dilution Across Multiple Pages
+**Mitigation**:
+- Consistent messaging framework across all solutions
+- Regular content audit for brand voice consistency
+- Customer validation quotes for authenticity
+- Competitive positioning consistency
+
+## Business & Market Risks
+
+### Risk: Solution Priority Misalignment with Market Demand
+**Mitigation**:
+- Phase 1 based on proven customer pain point frequency
+- Analytics-driven decision making for Phase 2/3 prioritization
+- Regular customer feedback integration
+- Flexible development approach for priority adjustments
+
+### Risk: Competitive Response to Detailed Technical Disclosure
+**Mitigation**:
+- Focus on proven capabilities rather than future roadmap
+- Customer validation emphasis over pure technical features
+- Unique positioning around ICI subcontractor specialization
+- Integration advantages that are difficult to replicate
+
+# Appendix  
+
+## Research Findings (ATLAS Customer Feedback Integration)
+- **#1 Pain Point**: "Payroll went from a nightmare to done by noon the next day"
+- **System Fragmentation**: "Strong interest from prospects to rip-and-replace existing systems"
+- **Integration Value**: "Appello could be the bridge allowing Vista to connect via Trimble App XChange, then to Zapier to anything else"
+- **User Experience**: "Users finding value in centralized job info, improved timesheet processes, and communication features"
+
+## Technical Specifications
+- **Page Load Target**: <2 seconds for all solution pages
+- **Mobile Performance**: 90+ Lighthouse scores on mobile devices
+- **SEO Requirements**: Unique meta descriptions, structured data, internal linking
+- **Analytics Integration**: Google Analytics 4 with custom events per solution
+
+## Competitive Positioning Framework
+- **vs. Manual Systems**: Time savings and accuracy improvements
+- **vs. Generic Software**: Construction-specific workflows and compliance
+- **vs. Procore**: Accessible pricing and subcontractor focus vs. GC complexity
+- **vs. Point Solutions**: Integrated platform vs. disconnected tools
+
+## Success Metrics
+- **Lead Generation**: 50+ qualified demos per month from solution pages
+- **Lead Quality**: 70%+ demo show rate from solution-specific leads
+- **Conversion Funnel**: Solution page → demo request → qualified opportunity
+- **SEO Performance**: Top 3 rankings for "[solution] for contractors" keywords
+- **User Engagement**: 3+ minutes average time on solution pages
+
+## Content Strategy Guidelines
+- **Problem-First Approach**: Lead with pain point before solution description
+- **Technical Credibility**: Specific capabilities (geofencing 500m-2km, QR codes, conditional logic)
+- **Customer Validation**: Real quotes with company names and employee counts
+- **Mobile Emphasis**: Field worker usability highlighted on every page
+- **Canadian Advantage**: Local market understanding and compliance features
+</PRD> 
